@@ -339,7 +339,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            /* CHANGED TO FLEX-START TO PUSH TEXT TO TOP */
+            justify-content: flex-start;
             box-shadow: 0 clamp(15px, 3vw, 30px) clamp(30px, 6vw, 60px) rgba(13, 59, 35, 0.3);
             z-index: 1; 
         }
@@ -364,7 +365,7 @@
             font-size: clamp(1.25rem, 3vw, 1.75rem);
             font-weight: 700;
             z-index: 2;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
             line-height: 1.2;
         }
         
