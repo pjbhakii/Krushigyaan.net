@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "https://pjbpawar.wixsite.com/krushi-dyanan/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://pjbpawar.wixsite.com/krushi-dyanan/blog/:path*",
+      "permanent": true
+    }
+  ]
+}
