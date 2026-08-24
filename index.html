@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AstroLive Review Intelligence" />
+  <title>AstroLive — Review Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">A</span><span>AstroLive</span></div>
+      <p class="eyebrow">Review intelligence</p>
+      <nav aria-label="Primary navigation">
+        <a class="active" href="#overview">Overview</a><a href="#sentiment">Sentiment</a><a href="#trust">Trust</a><a href="#sources">Sources</a><a href="#topics">Topics</a><a href="#reviews">Reviews</a><a href="#executive">AI Insights</a>
+      </nav>
+      <div class="engine-status"><span class="status-dot"></span><div><strong>AI Intelligence Engine</strong><small>Operational</small></div></div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div><p class="eyebrow">AstroLive / Intelligence</p><h1>Review Intelligence</h1><p class="subtitle">Understand what customers trust, dislike, and value across AstroLive.</p></div>
+        <div class="header-actions"><span id="connectionStatus" class="connection loading"><i></i>Connecting</span><button class="refresh" id="refreshButton">Refresh dashboard</button></div>
+      </header>
+      <section class="filterbar" aria-label="Review filters"><div class="filter-title">Explore feedback</div><label>Platform <select id="sourceFilter"><option value="all">All platforms</option></select></label><label>Sentiment <select id="sentimentFilter"><option value="all">All sentiment</option></select></label><label class="search"><span>Search reviews</span><input id="searchFilter" type="search" placeholder="Search customer feedback" /></label><button class="reset" id="resetFilters">Reset filters</button></section>
+      <div id="pageContent" aria-live="polite"><section class="loading-view" aria-label="Loading dashboard"><div class="skeleton heading"></div><div class="skeleton-grid"><i></i><i></i><i></i><i></i><i></i></div><div class="skeleton large"></div></section></div>
+      <footer><span>AstroLive Review Intelligence</span><span id="footerUpdate">Loading intelligence…</span><span class="prototype">Prototype intelligence pipeline</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
