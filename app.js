@@ -1,4 +1,4 @@
-const API_URL = 'https://cypherz.app.n8n.cloud/webhook/astrolive-dashboard';
+const API_URL = 'https://prajwalp12.app.n8n.cloud/webhook/astrolive-dashboard';
 let dashboardData = null, controller = null;
 const $ = (selector) => document.querySelector(selector);
 const safeArray = (value) => Array.isArray(value) ? value : [];
